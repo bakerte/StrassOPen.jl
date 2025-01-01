@@ -49,6 +49,9 @@ module StrassOPen
       include(libpath*files[w])
    end
 
+   println("initialization properly loaded...more functionality coming soon")
+
+#=
    files = ["libalg.jl","blas.jl","matmul.jl"]
    const mathpath = libpath*"libalg/"
    for w = 1:length(files)
@@ -63,7 +66,7 @@ module StrassOPen
 
    const testpath = libdir*"/test/"
    include(testpath*"alltest.jl")
-
+=#
 
 end
 
