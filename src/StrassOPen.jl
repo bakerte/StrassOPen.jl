@@ -50,6 +50,7 @@ module StrassOPen
    end
 
    println("initialization properly loaded...more functionality coming soon")
+println("this commit will just allow us to start the package process with Julia and set dependencies on other libraries")
 
 #=
    files = ["libalg.jl","blas.jl","matmul.jl"]
