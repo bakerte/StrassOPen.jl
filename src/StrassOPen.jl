@@ -41,13 +41,6 @@ and define functions as `LinearAlgebra.svd` to use functions from that package.
 """
 module StrassOPen
 
-function checkthis()
-   println("initialization properly loaded...more functionality coming soon")
-println("this commit will just allow us to start the package process with Julia and set dependencies on other libraries")
-end
-export checkthis
-
-#=
    const libdir = @__DIR__
    const libpath = libdir*"/lib/"
 
@@ -70,7 +63,6 @@ export checkthis
 
    const testpath = libdir*"/test/"
    include(testpath*"alltest.jl")
-=#
 
 end
 
