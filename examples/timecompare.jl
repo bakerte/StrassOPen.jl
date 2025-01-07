@@ -1,4 +1,16 @@
-using BenchmarkTools
+#########################################################################
+#
+#           Strassen Open Implementation (StrassOPen)
+#                          v1.0
+#
+#########################################################################
+# Made by Thomas E. Baker, Kiana Gallagher, and Aaron Dayton and « les qubits volants » (2024)
+# See accompanying license with this program
+# This code is native to the julia programming language (v1.10.4+)
+#
+
+using StrassOPen
+#using BenchmarkTools
 
 function regmatmul(A,B)
   C = Array{Float64,2}(undef,size(A,1),size(B,2))
@@ -18,5 +30,5 @@ m = 1028
 A = rand(m,m)
 B = rand(m,m)
 
-@btime regmatmul(A,B);
-@btime A*B;
+@time regmatmul(A,B);
+@time A*B;
