@@ -1,7 +1,7 @@
 name = "StrassOPen"
 uuid = "1971c852-c825-11ef-1d57-2185ebdca1d8"
 authors = ["Aaron Dayton","Kiana Gallagher","Thomas E. Baker"]
-version = "0.1.0"
+version = "0.4.0"
 
 [compat]
 julia = "1.11.0"
