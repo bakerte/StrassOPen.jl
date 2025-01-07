@@ -55,7 +55,7 @@ module StrassOPen
       include(mathpath*files[w])
    end
 
-   files = ["strassOPen.jl","Strassen.jl"]
+   files = ["strassOPen.jl","strassen.jl"]
    const strassenpath = libpath*"strassen/"
    for w = 1:length(files)
       include(strassenpath*files[w])
