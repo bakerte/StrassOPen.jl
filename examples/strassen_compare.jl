@@ -9,11 +9,11 @@
 # This code is native to the julia programming language (v1.10.4+)
 #
 
-include("../StrassOPen.jl")
+using StrassOPen
 import LinearAlgebra
 
 
-using BenchmarkTools
+#using BenchmarkTools
 
 
 m = 12
@@ -24,7 +24,7 @@ A = rand(b,b)
 B = rand(b,b)
 
 C = A*B
-@btime A*B
+@time A*B
 
 
 
@@ -35,7 +35,7 @@ C = A*B
 
 
 C = A*B
-@btime A*B
+@time A*B
 
 #=
 if num_threads > 1
@@ -45,12 +45,12 @@ end
 =#
 
 checkC = StrassOPen.strassen(A,B,n=1)
-@btime StrassOPen.strassen(A,B,n=1)
+@time StrassOPen.strassen(A,B,n=1)
 
 nlevel = 2
 
 checkC = StrassOPen.strassen(A,B,n=nlevel)
-@btime StrassOPen.strassen(A,B,n=nlevel)
+@time StrassOPen.strassen(A,B,n=nlevel)
 
 
 
