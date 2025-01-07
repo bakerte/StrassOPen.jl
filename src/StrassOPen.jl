@@ -42,7 +42,7 @@ and define functions as `LinearAlgebra.svd` to use functions from that package.
 module StrassOPen
 
    const libdir = @__DIR__
-   const libpath = libdir*"/lib/"
+   const libpath = libdir*"/../lib/"
 
    files = ["types.jl","imports.jl","exports.jl"]
    for w = 1:length(files)
@@ -61,7 +61,7 @@ module StrassOPen
       include(strassenpath*files[w])
    end
 
-   const testpath = libdir*"/test/"
+   const testpath = libdir*"/../test/"
    include(testpath*"alltest.jl")
 
 end
