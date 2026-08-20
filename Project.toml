@@ -5,7 +5,7 @@ version = "0.5.0"
 
 [compat]
 julia = "1.12.7"
-LinearAlgebra = "1.14.0"
+LinearAlgebra = "1.12.0"
 Distributed = "1.11.0"
 Printf = "1.11.0"
 Serialization = "1.11.0"
