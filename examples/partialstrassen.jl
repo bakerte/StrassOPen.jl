@@ -11,6 +11,7 @@
 #
 
 using StrassOPen
+import LinearAlgebra
 
 LinearAlgebra.BLAS.set_num_threads(1) #single-threaded demonstration here
 StrassOPen.test(2, 2^10, 2^10, 2^10) #will be exported soon
