@@ -9,12 +9,12 @@
 # This code is native to the julia programming language (v1.10.4+)
 #
 
-include("partial_strassOPen.jl")
+#include("partial_strassOPen.jl")
 using LinearAlgebra
 using BenchmarkTools
 
 # SINGLE THREADING
-LinearAlgebra.BLAS.set_num_threads(1)
+#LinearAlgebra.BLAS.set_num_threads(1)
 
 
 function init_subblock!(
