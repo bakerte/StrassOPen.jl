@@ -10,7 +10,8 @@
 # This code is native to the julia programming language (v1.10.4+)
 #
 
-using StrassOPen
+#using StrassOPen
+include("../src/StrassOPen.jl")
 import LinearAlgebra
 
 LinearAlgebra.BLAS.set_num_threads(1) #single-threaded demonstration here
